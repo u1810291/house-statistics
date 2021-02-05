@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Card } from '../../card';
-import { PeopleService } from '../../services/messages/person.service';
+import { PeopleService } from '../../services/card/card.service';
 import { MessageService } from '../../services/messages/message.service';
 
 @Component({
@@ -17,6 +17,7 @@ export class CardComponent implements OnInit {
 
   constructor(private peopleService: PeopleService, private messageService: MessageService) { }
 
+  // tslint:disable-next-line: typedef
   ngOnInit() {
     this.getPeople();
   }

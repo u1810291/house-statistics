@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 
 import { Observable, of } from 'rxjs';
 
-import { Card } from '../../card';
-import { PEOPLE } from '../../data/mock-people';
+import { Card } from '../card';
+import { PEOPLE } from '../data/mock-people';
 import { MessageService } from './message.service';
 
 @Injectable({

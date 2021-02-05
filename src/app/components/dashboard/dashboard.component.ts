@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(private peopleService: PeopleService) { }
 
+  // tslint:disable-next-line: typedef
   ngOnInit() {
     this.getPeople();
   }
