@@ -17,9 +17,9 @@ export class PeopleService {
     return of(PEOPLE);
   }
 
-  getHero(id: number): Observable<Card | undefined> {
+  getPerson(id: number): Observable<Card | undefined> {
     // TODO: send the message _after_ fetching the hero
     this.messageService.add(`HeroService: fetched hero id=${id}`);
-    return of(PEOPLE.find(people => people.id === id));
+    return of(PEOPLE.find(person => person.id === id));
   }
 }
