@@ -10,7 +10,6 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
   declarations: [
     AppComponent,
     CardComponent
-
   ],
   imports: [
     BrowserModule,

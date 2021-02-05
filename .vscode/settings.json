@@ -1,0 +1,4 @@
+{
+  "tslint.ignoreDefinitionFiles": true,
+  "tslint.suppressWhileTypeErrorsPresent": true
+}
