@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from '../card';
-import { PEOPLE } from '../data/mock-people';
+import { Card } from '../../card';
+import { PEOPLE } from '../../data/mock-people';
 
 @Component({
   selector: 'app-card',

@@ -18,4 +18,18 @@
       <input [(ngModel)]="selectedPerson.name" placeholder="name" />
     </label>
   </div>
+
+  <h2>My Heroes</h2>
+
+  <ul class="heroes">
+    <li
+      *ngFor="let person of people"
+      [class.selected]="person === selectedPerson"
+      (click)="onSelect(person)"
+    >
+      <span class="badge">{{ person.id }}</span> {{ perons.name }}
+    </li>
+  </ul>
+
+  <app-detail [person]="selectedPerson"></app-detail>
 </div>
