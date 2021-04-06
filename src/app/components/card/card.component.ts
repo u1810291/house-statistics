@@ -20,8 +20,7 @@ export class CardComponent implements OnInit {
 
   getPeople(): void {
     this.peopleService.getPeople()
-      .subscribe(people => {
-        return this.heroes = people
-      });
+      // tslint:disable-next-line: deprecation
+      .subscribe(people => this.heroes = people);
   }
 }
