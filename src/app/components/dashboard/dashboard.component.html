@@ -4,7 +4,7 @@
     <a
       *ngFor="let person of people"
       class="col-1-4"
-      routerLink="/detail/{{ person.id }}"
+      href="/detail/{{ person.id }}"
     >
       <div class="module hero">
         <h4>{{ person.name }}</h4>
