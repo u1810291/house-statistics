@@ -9,7 +9,7 @@ import { PeopleService } from '../../services/card/card.service';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  people: Card[] | undefined;
+  heroes: Card[] | undefined;
 
   constructor(private peopleService: PeopleService) { }
 
@@ -20,6 +20,8 @@ export class CardComponent implements OnInit {
 
   getPeople(): void {
     this.peopleService.getPeople()
-      .subscribe(people => this.people = people);
+      .subscribe(people => {
+        return this.heroes = people
+      });
   }
 }

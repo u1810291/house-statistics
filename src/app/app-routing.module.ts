@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CardComponent } from './components/card/card.component';

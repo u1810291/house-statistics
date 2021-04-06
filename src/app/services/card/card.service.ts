@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import * as core from '@angular/core';
 
 import { Observable, of } from 'rxjs';
 
@@ -6,14 +6,14 @@ import { Card } from '../../card';
 import { PEOPLE } from '../../data/mock-people';
 import { MessageService } from '../messages/message.service';
 
-@Injectable({ providedIn: 'root' })
+@core.Injectable({ providedIn: 'root' })
 export class PeopleService {
 
   constructor(private messageService: MessageService) { }
 
   getPeople(): Observable<Card[]> {
     // TODO: send the message _after_ fetching the heroes
-    this.messageService.add('HeroService: fetched heroes');
+    this.messageService.add('Hero Service: fetched heroes');
     return of(PEOPLE);
   }
 
